@@ -12,8 +12,8 @@ PROJ:=aq_gcc_v7.0_hwv
 TARGET:=$(PROJ)
 
 # Need to change this line to correct gcc installation path
-TOOLCHAIN_ROOT:=D:/apps/gcc-arm-none-eabi
-TOOLCHAIN_PATH:=$(TOOLCHAIN_ROOT)/bin
+#TOOLCHAIN_ROOT:=D:/apps/gcc-arm-none-eabi
+#TOOLCHAIN_PATH:=$(TOOLCHAIN_ROOT)/bin
 TOOLCHAIN_PREFIX:=arm-none-eabi
 
 CC=$(TOOLCHAIN_PREFIX)-gcc

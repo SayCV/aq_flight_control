@@ -1,12 +1,9 @@
 #!/usr/bin/env bash
 set -ex
 
-BUILD_TYPE=${BUILD_TYPE:-}
-
-docker build -t aq_flight_control_builder .
 docker run \
     --rm \
+    --volume "${PWD}":/source \
     --volume "${PWD}/build":/build \
-    --env "BUILD_TYPE=${BUILD_TYPE}" \
-    aq_flight_control_builder \
+    mikewhy/gcc-arm-none-eabi \
     "$@"
